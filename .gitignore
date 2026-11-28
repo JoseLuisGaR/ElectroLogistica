@@ -1,0 +1,71 @@
+# Ruta: .gitignore · Responsable: A
+# .gitignore de .NET para ElectroLogística.
+# IMPORTANTE: la base entregable datos/electro.db SÍ se versiona (lo exige la guía).
+
+# Compilación
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]64/
+artifacts/
+*.nupkg
+*.snupkg
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.DotSettings.user
+
+# Pruebas y cobertura
+TestResults/
+[Tt]est[Rr]esult*/
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+# Diagnóstico de memoria (instantáneas pesadas; las capturas PNG sí se versionan)
+*.diagsession
+*.dmp
+*.gcdump
+
+# SQLite: bases temporales de pruebas y benchmarks, archivos auxiliares
+*.db-journal
+*.db-wal
+*.db-shm
+tmp_*.db
+*_tmp.db
+bench_*.db
+prueba_*.db
+resultados/tmp/
+respaldos/
+
+# Excepción explícita: la base entregable
+!datos/electro.db
+
+# Python (scripts de gráficas)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Reporte generado (el PDF se adjunta en la entrega, no en el repositorio)
+docs/reporte/*.pdf

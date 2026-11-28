@@ -1,0 +1,12 @@
+# Ruta: .gitattributes · Responsable: A
+* text=auto
+*.cs     text diff=csharp
+*.csproj text
+*.sln    text eol=crlf
+*.md     text
+*.sql    text
+*.py     text eol=lf
+*.csv    text
+*.db     binary
+*.png    binary
+*.pdf    binary
